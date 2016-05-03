@@ -84,7 +84,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		Thread hilo = new Thread(new BajarUltimoBloque());
 		hilo.start();
 
-		ReproducirCanciones.playOnce("songs/" + titulo + ".wav");
+		ReproducirCanciones.playOnce("src/main/java/es/deusto/spq/songs/" + titulo + ".wav");
 	}
 
 	/**
@@ -97,7 +97,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		public void run() {
 			int i = cont;
 			cont++;
-			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/img/" + arrayBloques.get(i).getTipo() + ".png", true);
+			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/java/es/deusto/spq/img/" + arrayBloques.get(i).getTipo() + ".png", true);
 			try {
 				Thread.sleep(arrayBloques.get(i).getTiempo() - tiempoBase);
 				addBloque(bg);
@@ -120,7 +120,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		public void run() {
 			int i = cont;
 			cont++;
-			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/img/" + arrayBloques.get(i).getTipo() + ".png", true);
+			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/java/es/deusto/spq/img/" + arrayBloques.get(i).getTipo() + ".png", true);
 			try {
 				Thread.sleep(arrayBloques.get(i).getTiempo() - tiempoBase);
 				addBloque(bg);
