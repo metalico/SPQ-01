@@ -13,7 +13,7 @@ import javax.swing.*;
 
 /**
  * Clase de objeto visible en pantalla en juego
- * @author Alvaro e I�aki
+ * @author 001
  */
 public class ObjetoGrafico extends JLabel {
 

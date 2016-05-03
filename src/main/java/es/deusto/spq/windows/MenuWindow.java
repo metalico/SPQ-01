@@ -28,7 +28,7 @@ import java.io.IOException;
 
 /**
  * Clase que crea la ventana del menu de juego
- * @author Alvaro e I�aki
+ * @author 001
  *
  */
 @SuppressWarnings("unused")

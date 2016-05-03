@@ -17,7 +17,7 @@ import main.java.es.deusto.spq.utils.BD;
 
 /**
  * Ventana para elegir la canci�n que se va a jugar
- * @author Alvaro e I�aki
+ * @author 001
  */
 public class VentanaSeleccionCancion extends JFrame {
 

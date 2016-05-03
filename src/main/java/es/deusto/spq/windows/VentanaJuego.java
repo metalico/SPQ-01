@@ -26,7 +26,7 @@ import main.java.es.deusto.spq.data.ReproducirCanciones;
 
 /**
  * Creaci�n de la ventana de juego con el funcionamiento del juego principal
- * @author Alvaro e I�aki
+ * @author 001
  *
  */
 public class VentanaJuego extends JFrame implements KeyListener {
