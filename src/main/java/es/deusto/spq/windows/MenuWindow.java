@@ -67,6 +67,8 @@ public class MenuWindow extends JFrame implements ActionListener {
 		this.setSize(1280, 720);
 		this.setLocationRelativeTo(null);
 		setTitle("AudioSurf Menu - Selecciona una opcion");
+		ClassLoader classLoader = getClass().getClassLoader();
+		setIconImage(Toolkit.getDefaultToolkit().getImage(classLoader.getResource("icon.png")));
 //		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuWindow.class.getResource("/main/resources/icon.png")));
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -101,7 +103,8 @@ public class MenuWindow extends JFrame implements ActionListener {
 		contentPane.add(btnSalir);
 
 		lblNewLabel = new JLabel("");
-//		lblNewLabel.setIcon(new ImageIcon(MenuWindow.class.getResource("/main/resources/fondoMenu.jpg")));
+		//setIconImage(Toolkit.getDefaultToolkit().getImage(classLoader.getResource("fondoMenu.png")));
+		lblNewLabel.setIcon(new ImageIcon(classLoader.getResource("fondoMenu.jpg")));
 		lblNewLabel.setBounds(0, 0, 1280, 720);
 		contentPane.add(lblNewLabel);
 

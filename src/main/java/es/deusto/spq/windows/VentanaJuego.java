@@ -51,7 +51,9 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		setSize(1280, 720);
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/resources/icon.png")));
+		ClassLoader classLoader = getClass().getClassLoader();
+		setIconImage(Toolkit.getDefaultToolkit().getImage(classLoader.getResource("icon.png")));
+		//setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/resources/icon.png")));
 		setTitle("Audiosurf - " + titulo);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();

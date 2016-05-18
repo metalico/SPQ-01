@@ -70,7 +70,8 @@ public class VentanaSeleccionCancion extends JFrame {
 		v = new JFrame();
 		v.setResizable(false);
 		v.setLocationRelativeTo(null);
-		v.setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/resources/icon.png")));
+		ClassLoader classLoader = getClass().getClassLoader();
+		v.setIconImage(Toolkit.getDefaultToolkit().getImage(classLoader.getResource("icon.png")));
 		v.setTitle("Elegir Canci�n - Audiosurf");
 		v.getContentPane().setLayout(new FlowLayout());
 		v.getContentPane().add(combo);

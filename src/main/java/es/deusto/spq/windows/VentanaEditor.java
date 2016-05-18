@@ -68,7 +68,9 @@ public class VentanaEditor extends JFrame implements KeyListener {
 		setSize(1280, 720);
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/resources/icon.png")));
+		ClassLoader classLoader = getClass().getClassLoader();
+		setIconImage(Toolkit.getDefaultToolkit().getImage(classLoader.getResource("icon.png")));
+		//setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/resources/icon.png")));
 		setTitle("Editor - Audiosurf");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
@@ -203,7 +205,7 @@ public class VentanaEditor extends JFrame implements KeyListener {
 		});
 
 		JLabel labelVentana = new JLabel("");
-		labelVentana.setIcon(new ImageIcon(VentanaEditor.class.getResource("/main/resources/fondoMenu.jpg")));
+		labelVentana.setIcon(new ImageIcon(classLoader.getResource("fondoMenu.jpg")));
 		labelVentana.setBounds(0, 0, 1280, 720);
 		contentPane.add(labelVentana);
 	}

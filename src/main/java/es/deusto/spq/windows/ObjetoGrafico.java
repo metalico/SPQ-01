@@ -43,6 +43,7 @@ public class ObjetoGrafico extends JLabel {
 		// Cargamos el icono (como un recurso - vale tambien del .jar)
 		this.nombreImagenObjeto = nombreImagenObjeto;
 		URL imgURL = Img.getURLRecurso(nombreImagenObjeto);
+		
 		if (imgURL == null) {
 			icono = null;
 			setBackground(Color.white);
