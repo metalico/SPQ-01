@@ -1,6 +1,5 @@
 package main.java.es.deusto.spq.windows;
 
-import main.java.es.deusto.spq.img.Img;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -10,6 +9,8 @@ import java.io.IOException;
 import java.net.URL;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+
+import main.java.es.deusto.spq.utils.Img;
 
 /**
  * Clase de objeto visible en pantalla en juego
@@ -30,7 +31,7 @@ public class ObjetoGrafico extends JLabel {
 	/**
 	 * Crea un nuevo objeto gr�fico de ventana para juegos. Si no existe el
 	 * fichero de imagen, se crea un rect�ngulo blanco con borde rojo
-	 * @param nombreImagenObjeto Nombre fichero donde est� la imagen del objeto (carpeta img)
+	 * @param nombreImagenObjeto Nombre fichero donde est� la imagen del objeto (carpeta resources)
 	 * @param visible true si se quiere ver, false si se quiere tener oculto
 	 * @param anchura Anchura del objeto en p�xels
 	 * @param altura Altura del objeto en p�xels
@@ -71,7 +72,7 @@ public class ObjetoGrafico extends JLabel {
 	 * Si no existe el fichero de imagen, se crea un rect�ngulo blanco con borde
 	 * rojo de 10x10 p�xels<br>
 	 * Si existe, se toma la anchura y la altura de esa imagen.
-	 * @param nombreImagenObjeto Nombre fichero donde est� la imagen del objeto (carpeta img)
+	 * @param nombreImagenObjeto Nombre fichero donde est� la imagen del objeto (carpeta resources)
 	 * @param visible Panel en el que se debe dibujar el objeto
 	 */
 	public ObjetoGrafico(String nombreImagenObjeto, boolean visible) {

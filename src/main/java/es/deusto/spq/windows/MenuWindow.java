@@ -67,7 +67,7 @@ public class MenuWindow extends JFrame implements ActionListener {
 		this.setSize(1280, 720);
 		this.setLocationRelativeTo(null);
 		setTitle("AudioSurf Menu - Selecciona una opcion");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuWindow.class.getResource("/main/java/es/deusto/spq/img/icon.png")));
+//		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuWindow.class.getResource("/main/resources/icon.png")));
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 		contentPane = new JPanel();
@@ -101,7 +101,7 @@ public class MenuWindow extends JFrame implements ActionListener {
 		contentPane.add(btnSalir);
 
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(MenuWindow.class.getResource("/main/java/es/deusto/spq/img/fondoMenu.jpg")));
+//		lblNewLabel.setIcon(new ImageIcon(MenuWindow.class.getResource("/main/resources/fondoMenu.jpg")));
 		lblNewLabel.setBounds(0, 0, 1280, 720);
 		contentPane.add(lblNewLabel);
 
@@ -115,7 +115,7 @@ public class MenuWindow extends JFrame implements ActionListener {
 
 	/**
 	 * Clase que implementa el boton salir y su animacion
-	 * @author Alvaro e I�aki
+	 * @author 001
 	 *
 	 */
 	class Quit implements Runnable {
@@ -137,7 +137,6 @@ public class MenuWindow extends JFrame implements ActionListener {
 	/**
 	 * M�todo del actionListener
 	 */
-	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		JButton boton = (JButton) arg0.getSource();
 		if (boton == btnEditor) {

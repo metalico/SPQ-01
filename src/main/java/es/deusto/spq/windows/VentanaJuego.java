@@ -51,7 +51,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		setSize(1280, 720);
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/java/es/deusto/spq/img/icon.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaEditor.class.getResource("/main/resources/icon.png")));
 		setTitle("Audiosurf - " + titulo);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
@@ -66,7 +66,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		contentPane.setBackground(Color.black);
 		contentPane.add(labelVentana);
 
-		nv = new Nave(3, "/main/java/es/deusto/spq/img/nave.png", true);
+		nv = new Nave(3, "/main/resources/nave.png", true);
 		addNave(nv);
 
 		try {
@@ -97,7 +97,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		public void run() {
 			int i = cont;
 			cont++;
-			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/java/es/deusto/spq/img/" + arrayBloques.get(i).getTipo() + ".png", true);
+			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/resources/" + arrayBloques.get(i).getTipo() + ".png", true);
 			try {
 				Thread.sleep(arrayBloques.get(i).getTiempo() - tiempoBase);
 				addBloque(bg);
@@ -120,7 +120,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		public void run() {
 			int i = cont;
 			cont++;
-			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/java/es/deusto/spq/img/" + arrayBloques.get(i).getTipo() + ".png", true);
+			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/resources/" + arrayBloques.get(i).getTipo() + ".png", true);
 			try {
 				Thread.sleep(arrayBloques.get(i).getTiempo() - tiempoBase);
 				addBloque(bg);

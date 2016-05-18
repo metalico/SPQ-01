@@ -36,7 +36,7 @@ public class BD {
 	 */
 	public static void connect() throws ClassNotFoundException, SQLException {
 		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection("jdbc:sqlite:db/canciones.sqlite");
+		conn = DriverManager.getConnection("jdbc:sqlite:db/canciones.db");
 	}
 
 	/**
