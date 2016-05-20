@@ -68,7 +68,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		contentPane.setBackground(Color.black);
 		contentPane.add(labelVentana);
 
-		nv = new Nave(3, "/main/resources/nave.png", true);
+		nv = new Nave(3, "nave", true);
 		addNave(nv);
 
 		try {
@@ -99,7 +99,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		public void run() {
 			int i = cont;
 			cont++;
-			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/resources/" + arrayBloques.get(i).getTipo() + ".png", true);
+			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "" + arrayBloques.get(i).getTipo(), true);
 			try {
 				Thread.sleep(arrayBloques.get(i).getTiempo() - tiempoBase);
 				addBloque(bg);
@@ -122,7 +122,7 @@ public class VentanaJuego extends JFrame implements KeyListener {
 		public void run() {
 			int i = cont;
 			cont++;
-			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), "/main/resources/" + arrayBloques.get(i).getTipo() + ".png", true);
+			BloqueGrafico bg = new BloqueGrafico(arrayBloques.get(i), arrayBloques.get(i).getTipo() + ".png", true);
 			try {
 				Thread.sleep(arrayBloques.get(i).getTiempo() - tiempoBase);
 				addBloque(bg);

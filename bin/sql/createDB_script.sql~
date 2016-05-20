@@ -1,6 +1,0 @@
--- CREATE TABLES --
-CREATE TABLE canciones (
-	titulo TEXT NOT NULL, 
-	url TEXT NOT NULL, 
-	pmax INTEGER DEFAULT 0,
-);

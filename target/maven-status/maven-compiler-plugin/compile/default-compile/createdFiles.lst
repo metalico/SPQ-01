@@ -3,7 +3,6 @@ main/java/es/deusto/spq/data/Cancion.class
 main/java/es/deusto/spq/windows/VentanaEditor$2.class
 main/java/es/deusto/spq/utils/FileManager.class
 main/java/es/deusto/spq/windows/ObjetoGrafico.class
-main/java/es/deusto/spq/utils/Img.class
 main/java/es/deusto/spq/windows/VentanaSeleccionCancion$2.class
 main/java/es/deusto/spq/windows/MenuWindow$Quit.class
 main/java/es/deusto/spq/windows/VentanaEditor$3.class

@@ -1,13 +1,12 @@
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/windows/MenuWindow.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/windows/VentanaEditor.java
+/home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/data/Cancion.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/data/Bloque.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/data/Nave.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/windows/VentanaJuego.java
-/home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/data/Cancion.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/windows/ObjetoGrafico.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/utils/BD.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/windows/VentanaSeleccionCancion.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/data/BloqueGrafico.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/utils/FileManager.java
 /home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/data/ReproducirCanciones.java
-/home/metalico/Escritorio/Workspaces/java/AudioSurf-001/src/main/java/es/deusto/spq/utils/Img.java

@@ -12,7 +12,7 @@ public class TestMoverNave {
 	
 	@Before
 	public void setUp() throws Exception {
-		v=new VentanaJuego("aoe");
+		v=new VentanaJuego("aoe2");
 	}
 
 	@After

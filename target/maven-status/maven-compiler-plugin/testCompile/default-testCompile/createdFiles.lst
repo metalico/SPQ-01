@@ -1,0 +1,5 @@
+test/java/es/deusto/spq/TestBloqueGrafico.class
+test/java/es/deusto/spq/TestVentanaJuego.class
+test/java/es/deusto/spq/TestBloque.class
+test/java/es/deusto/spq/TestMoverNave.class
+test/java/es/deusto/spq/TestObjetoGrafico.class

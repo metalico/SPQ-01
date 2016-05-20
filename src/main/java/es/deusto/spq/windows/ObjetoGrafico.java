@@ -5,12 +5,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.net.URL;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 
-import main.java.es.deusto.spq.utils.Img;
 
 /**
  * Clase de objeto visible en pantalla en juego
@@ -42,13 +38,30 @@ public class ObjetoGrafico extends JLabel {
 		alturaObjeto = altura;
 		// Cargamos el icono (como un recurso - vale tambien del .jar)
 		this.nombreImagenObjeto = nombreImagenObjeto;
-		URL imgURL = Img.getURLRecurso(nombreImagenObjeto);
+		/*Img imagen = new Img();
+		URL imgURL = imagen.getURLRecurso(nombreImagenObjeto);
 		
-		if (imgURL == null) {
+		if (imgURL == null) {*/
 			icono = null;
-			setBackground(Color.white);
-			setBorder(BorderFactory.createLineBorder(Color.red));
-		} else {
+			if (nombreImagenObjeto.equals("nave")){
+				setBackground(Color.blue);
+				setBorder(BorderFactory.createLineBorder(Color.blue));
+				setBorder(BorderFactory.createLineBorder(Color.blue, 100));
+				setSize(100, 100);
+			}
+			else if (nombreImagenObjeto.equals("color")){
+				setBackground(Color.red);
+				setBorder(BorderFactory.createLineBorder(Color.red));
+				setBorder(BorderFactory.createLineBorder(Color.red, 40));
+				setSize(100, 60);
+			}
+			else if (nombreImagenObjeto.equals("gris")){
+				setBackground(Color.gray);
+				setBorder(BorderFactory.createLineBorder(Color.gray));
+				setBorder(BorderFactory.createLineBorder(Color.gray, 40));
+				setSize(100, 60);
+			}
+		/*} else {
 			icono = new ImageIcon(imgURL);
 			setIcon(icono);
 			if (anchura == icono.getIconWidth()
@@ -62,8 +75,7 @@ public class ObjetoGrafico extends JLabel {
 					escalado = false;
 				}
 			}
-		}
-		setSize(anchura, altura);
+		}*/
 		esVisible = visible;
 		setVisible(esVisible);
 	}
