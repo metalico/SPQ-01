@@ -1,0 +1,168 @@
+\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d}{}\section{main.\+java.\+es.\+deusto.\+spq.\+utils.\+BD Class Reference}
+\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d}\index{main.\+java.\+es.\+deusto.\+spq.\+utils.\+BD@{main.\+java.\+es.\+deusto.\+spq.\+utils.\+BD}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d}{BD} \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ab4ecb43df9758f1d9a042b6bbed09bf1}{get\+Instance} ()
+\item 
+static void \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a69ea763009d4bed986121d5d92dc2e58}{connect} ()  throws Class\+Not\+Found\+Exception, S\+Q\+L\+Exception 
+\item 
+static void \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_acb9d601429902459fa486d736da6d50b}{disconnect} ()  throws S\+Q\+L\+Exception 
+\item 
+static void \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a9325aeed40da428c9f76f912c0d6f425}{guardar\+Cancion} (String titulo, String url, int pmax)
+\item 
+static void \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_adcf2463a9697162a9d8d461f1c0e3821}{mostrar\+P\+Max} ()
+\item 
+static boolean \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ae7d2915f3528081e196a56fa6da6c829}{es\+P\+Max} (String titulo, int punt)
+\item 
+static Array\+List$<$ String $>$ \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a26cc1c853d5d94da3748cbf88bc7de35}{sacar\+Titulos} ()
+\item 
+static void \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ac9466c281e7b7df6baceb454369d3c71}{actualizar\+Record} (String titulo, int pmax)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase para el manejo de bases de datos \begin{DoxyAuthor}{Author}
+001 
+\end{DoxyAuthor}
+
+
+Definition at line 17 of file B\+D.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!actualizar\+Record@{actualizar\+Record}}
+\index{actualizar\+Record@{actualizar\+Record}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{actualizar\+Record(\+String titulo, int pmax)}{actualizarRecord(String titulo, int pmax)}}]{\setlength{\rightskip}{0pt plus 5cm}static void main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+actualizar\+Record (
+\begin{DoxyParamCaption}
+\item[{String}]{titulo, }
+\item[{int}]{pmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ac9466c281e7b7df6baceb454369d3c71}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ac9466c281e7b7df6baceb454369d3c71}
+
+
+Definition at line 176 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!connect@{connect}}
+\index{connect@{connect}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}static void main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Class\+Not\+Found\+Exception, S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a69ea763009d4bed986121d5d92dc2e58}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a69ea763009d4bed986121d5d92dc2e58}
+Establece una conexi�n con la \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d}{BD} 
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\+Not\+Found\+Exception} & \\
+\hline
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 37 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{disconnect()}{disconnect()}}]{\setlength{\rightskip}{0pt plus 5cm}static void main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_acb9d601429902459fa486d736da6d50b}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_acb9d601429902459fa486d736da6d50b}
+Detiene la conexi�n con la \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d}{BD} 
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 46 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!es\+P\+Max@{es\+P\+Max}}
+\index{es\+P\+Max@{es\+P\+Max}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{es\+P\+Max(\+String titulo, int punt)}{esPMax(String titulo, int punt)}}]{\setlength{\rightskip}{0pt plus 5cm}static boolean main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+es\+P\+Max (
+\begin{DoxyParamCaption}
+\item[{String}]{titulo, }
+\item[{int}]{punt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ae7d2915f3528081e196a56fa6da6c829}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ae7d2915f3528081e196a56fa6da6c829}
+Comprueba si la puntuación enviada es mayor que el récord 
+\begin{DoxyParams}{Parameters}
+{\em titulo} & de la canción \\
+\hline
+{\em punt} & puntuación sacada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf BD} main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ab4ecb43df9758f1d9a042b6bbed09bf1}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_ab4ecb43df9758f1d9a042b6bbed09bf1}
+Devuelve el atributo instance \begin{DoxyReturn}{Returns}
+instance 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!guardar\+Cancion@{guardar\+Cancion}}
+\index{guardar\+Cancion@{guardar\+Cancion}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{guardar\+Cancion(\+String titulo, String url, int pmax)}{guardarCancion(String titulo, String url, int pmax)}}]{\setlength{\rightskip}{0pt plus 5cm}static void main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+guardar\+Cancion (
+\begin{DoxyParamCaption}
+\item[{String}]{titulo, }
+\item[{String}]{url, }
+\item[{int}]{pmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a9325aeed40da428c9f76f912c0d6f425}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a9325aeed40da428c9f76f912c0d6f425}
+Guarda una canci�n nueva en la \hyperlink{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d}{BD} 
+\begin{DoxyParams}{Parameters}
+{\em titulo} & de la cancion \\
+\hline
+{\em url} & direcci�n del archivo \\
+\hline
+{\em pmax} & puntuaci�n m�xima en esa canci�n \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!mostrar\+P\+Max@{mostrar\+P\+Max}}
+\index{mostrar\+P\+Max@{mostrar\+P\+Max}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{mostrar\+P\+Max()}{mostrarPMax()}}]{\setlength{\rightskip}{0pt plus 5cm}static void main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+mostrar\+P\+Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_adcf2463a9697162a9d8d461f1c0e3821}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_adcf2463a9697162a9d8d461f1c0e3821}
+Muestra una ventana emergente con la puntuación máxima de cada canción 
+
+Definition at line 84 of file B\+D.\+java.
+
+\index{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}!sacar\+Titulos@{sacar\+Titulos}}
+\index{sacar\+Titulos@{sacar\+Titulos}!main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD@{main\+::java\+::es\+::deusto\+::spq\+::utils\+::\+BD}}
+\subsubsection[{\texorpdfstring{sacar\+Titulos()}{sacarTitulos()}}]{\setlength{\rightskip}{0pt plus 5cm}static Array\+List$<$String$>$ main.\+java.\+es.\+deusto.\+spq.\+utils.\+B\+D.\+sacar\+Titulos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a26cc1c853d5d94da3748cbf88bc7de35}{}\label{classmain_1_1java_1_1es_1_1deusto_1_1spq_1_1utils_1_1_b_d_a26cc1c853d5d94da3748cbf88bc7de35}
+Saca un arraylist con los títulos de las canciones \begin{DoxyReturn}{Returns}
+arraylist de títulos 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file B\+D.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/deusto/spq/utils/\hyperlink{_b_d_8java}{B\+D.\+java}\end{DoxyCompactItemize}
